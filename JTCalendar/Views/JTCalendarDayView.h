@@ -17,7 +17,11 @@
 
 @property (nonatomic, readonly) UIView *circleView;
 @property (nonatomic, readonly) UIView *dotView;
+@property (nonatomic, readonly) UIView *dotView2;
+@property (nonatomic, readonly) UIView *dotView3;
+@property (nonatomic, readonly) UILabel *plusLabel;
 @property (nonatomic, readonly) UILabel *textLabel;
+@property (nonatomic, readonly) CGRect refDotFrame;
 
 @property (nonatomic) CGFloat circleRatio;
 @property (nonatomic) CGFloat dotRatio;
@@ -28,5 +32,7 @@
  * Must be call if override the class
  */
 - (void)commonInit;
+
+- (void)adjustDotView:(NSArray<UIColor *> *)colors;
 
 @end
